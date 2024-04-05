@@ -10,4 +10,9 @@ $ npm install -g typescript
 
 
 
-% 実行手順
+実行手順
+npm install
+
+tsc -w
+
+npm start
