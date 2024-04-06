@@ -1,11 +1,10 @@
-function performOperation(operation: string): void {
-    const num1Input = document.getElementById('num1') as HTMLInputElement;
-    const num2Input = document.getElementById('num2') as HTMLInputElement;
+"use strict";
+function performOperation(operation) {
+    const num1Input = document.getElementById('num1');
+    const num2Input = document.getElementById('num2');
     const num1 = Number(num1Input.value);
     const num2 = Number(num2Input.value);
-
-    let result: number;
-
+    let result;
     switch (operation) {
         case 'add':
             result = add(num1, num2);
@@ -23,29 +22,23 @@ function performOperation(operation: string): void {
             result = NaN;
             break;
     }
-
     const resultElement = document.getElementById('result');
     if (resultElement) {
         resultElement.textContent = `Result: ${result}`;
     }
 }
-
-function add(a: number, b: number): number {
+function add(a, b) {
     return a + b;
 }
-
-function subtract(a: number, b: number): number {
+function subtract(a, b) {
     return a - b;
 }
-
-function multiply(a: number, b: number): number {
+function multiply(a, b) {
     return a * b;
 }
-
-function divide(a: number, b: number): number {
+function divide(a, b) {
     if (b === 0) {
         throw new Error('Cannot divide by zero');
     }
     return a / b;
 }
-
