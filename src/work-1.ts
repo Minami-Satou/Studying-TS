@@ -1,6 +1,6 @@
-function performOperation(operation: string): void {
-    const num1Input = document.getElementById('num1') as HTMLInputElement
-    const num2Input = document.getElementById('num2') as HTMLInputElement
+function performOperation(operation: ):  {
+    const num1Input = document.getElementById('num1')
+    const num2Input = document.getElementById('num2')
     const num1 = Number(num1Input.value);
     const num2 = Number(num2Input.value);
 
@@ -30,19 +30,19 @@ function performOperation(operation: string): void {
     }
 }
 
-function add(a: number, b: number): number {
+function add(a: , b: ):  {
     return a + b;
 }
 
-function subtract(a: number, b: number): number {
+function subtract(a: , b: ):  {
     return a - b;
 }
 
-function multiply(a: number, b: number): number {
+function multiply(a: , b: ):  {
     return a * b;
 }
 
-function divide(a: number, b: number): number {
+function divide(a: , b: ):  {
     if (b === 0) {
         throw new Error('Cannot divide by zero');
     }
