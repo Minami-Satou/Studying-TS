@@ -1,4 +1,4 @@
-function performOperation(operation: string): void {
+function performOperation(operation: ):  {
     const num1Input = document.getElementById('num1')
     const num2Input = document.getElementById('num2')
     const num1 = Number(num1Input.value);
@@ -30,19 +30,19 @@ function performOperation(operation: string): void {
     }
 }
 
-function add(a, b): {
+function add(a: , b: ):  {
     return a + b;
 }
 
-function subtract(a, b): {
+function subtract(a: , b: ):  {
     return a - b;
 }
 
-function multiply(a, b): {
+function multiply(a: , b: ):  {
     return a * b;
 }
 
-function divide(a, b): {
+function divide(a: , b: ):  {
     if (b === 0) {
         throw new Error('Cannot divide by zero');
     }
