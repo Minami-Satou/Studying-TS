@@ -64,15 +64,15 @@ interface  :{
 // area() メソッドは、円の面積を計算して返します (π * radius^2)。
 
 class Circle implements Shape {
-    name: string = "Circle";
-    radius: number;
+    name:  = "Circle";
+    radius: ;
 
     constructor(radius: number) {
         this.radius = radius;
     }
 
     area(): number {
-        return Math.PI * this.radius ** 2;
+        return Math.PI *  ** 2;
     }
 }
 
